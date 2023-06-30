@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb3b7f1b54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <a href="#" class="logo">Vishal</a>
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#my-skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#porfolio">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <!-- <p>Software Developer</p> -->
+                <p>Learner</p>
+                <h1>Hi, I'm <span>Vishal</span> <br>Kumar Prajapati From <br> India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title btnn">About Me</h1>
+            <div class="row">
+                <div class="about-col-1 image-container">
+                    <img src="image/dpp.png" alt="#">
+                </div>
+                <div class="about-col-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Possimus quis accusamus ea
+                        iusto saepe id voluptates ad labore quaerat?
+                        Quaerat nemo perferendis officiis enim
+                        dolor doloremque, accusamus placeat at assumenda.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Voluptas cum, adipisci nostrum at expedita corporis atque
+                        modi tempore voluptatum. Cupiditate ad nemo numquam in sequi
+                        expedita repudiandae sit omnis aliquam! <br>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa cupiditate animi asperiores dolorem delectus exercitationem praesentium doloribus nulla nisi porro. Laboriosam cum voluptas sit alias maxime aut, reiciendis maiores deleniti! <br><br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore praesentium delectus dolorem repudiandae tempore consequatur! Delectus commodi ex, hic pariatur nesciunt sit laborum, ratione, nulla maxime perspiciatis excepturi consequuntur sed.
+                    </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links " onclick="opentab('Skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('Experience')">Experience</p> -->
+    
+                    </div>
+                   
+                    <!-- <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span></span><br>
+                            </li>
+                        </ul>
+                    </div> -->
+    
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li>
+                                <span>B.TECH CSE (2021 - 2025)</span><br> Indian Institute Of Information Technology,<br>Guwahati Assam <br> Grade : 8.21 (till 3rd semester)
+                            </li>
+                            <li>
+                                <span>INTERMEDIATE (2020)</span><br>Divine Sainik School,Lahartara Varanasi <br>Grade : 94.4%
+                            </li>
+                            <li>
+                                <span>HIGH SCHOOL (2018)</span><br>Divine Sainik School, Lahartara Varanasi <br>Grade : 90.6%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Skills">
+                        <ul>
+                            <li>
+                                <span>Programming Language</span><br>C/C++, Java,Python
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>HTML, CSS, Bootstrap, Javascript, Nodejs
+                            </li>
+                            <li>
+                                <span>DBMS</span><br>MySql, MongoDB
+                            </li>
+                            <li>
+                                <span>Miscellaneous</span><br> Numpy, Pygame, Tkinter
+                            </li>
+                            <li>
+                                <span>Familiar</span> <br>Pandas, Sping and Spring Boot, Sping JDBC,JPA,Hibernate<br>
+                            </li>
+                            <li>
+                                <span>Tools</span><br> Git-Github, VS Code
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="Vishal_Kumar_Prajapati.pdf" download class="btn btn2">Download CV <i class="fa-solid fa-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="my-skills">
+        <div class="container">
+            <h1 class="sub-title btnn">My Skills</h1>
+            <div class="my-skills-list">
+                <div>
+                    <img src="image/monitor.png" alt="#">
+                    <h2>Programming </h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt ullam rerum nam,
+                        commodi atque
+                        laudantium laborum minima officia consectetur doloremque reiciendis corporis soluta culpa? Repellat
+                        dolorum
+                        corporis nesciunt dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <img src="image/data-structure.png" alt="">
+
+                    <h2>DSA</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt ullam rerum nam,
+                        commodi atque
+                        laudantium laborum minima officia consectetur doloremque reiciendis corporis soluta culpa? Repellat
+                        dolorum
+                        corporis nesciunt dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <img src="image/java.png" alt="#">
+                    <h2>OOPs (Java)</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt ullam rerum nam,
+                        commodi atque laudantium laborum minima officia consectetur doloremque reiciendis corporis soluta
+                        culpa? Repellat dolorum corporis nesciunt dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <img src="image/database.png" alt="#">
+                    <h2>DBMS</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt ullam rerum nam,
+                        commodi atque laudantium laborum minima officia consectetur doloremque reiciendis corporis soluta
+                        culpa? Repellat dolorum corporis nesciunt dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <img src="image/html.png" alt="#about">
+                    <h2>Web Developement</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt ullam rerum nam,
+                        commodi atque laudantium laborum minima officia consectetur doloremque reiciendis corporis soluta
+                        culpa? Repellat dolorum corporis nesciunt dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+    
+                <div>
+                    <img src="image/machine-learning.png" alt="">
+                    <h2>Machine Learning</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium incidunt ullam rerum nam,
+                        commodi atque
+                        laudantium laborum minima officia consectetur doloremque reiciendis corporis soluta culpa? Repellat
+                        dolorum
+                        corporis nesciunt dolor!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+
+<div id="course-work">
+    <div class="timeline">
+        <h1 class="sub-title heading btnn">
+            My CourseWork
+        </h1>
+        <div class="course-list">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 1</h1>
+                    <p class="card-detail">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis praesentium ea doloribus vero explicabo iste 
+                        quam? Quia, magnam ab! Nihil tempore omnis dignissimos laboriosam, numquam at perspiciatis fugiat magni.
+                    </p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 2</h1>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae
+                        laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti
+                        exercitationem temporibus repellat
+                        non magni cupiditate ea reprehenderit.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 3</h1>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae
+                        laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti
+                        exercitationem temporibus repellat
+                        non magni cupiditate ea reprehenderit.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Semester 4</h1>
+                    <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae
+                        laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti
+                        exercitationem temporibus repellat
+                        non magni cupiditate ea reprehenderit.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title btnn">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/pr2.png" alt="#">
+                    <div class="layer">
+                        <h3>
+                            Real Estate Management Website
+                        </h3>
+                        <p>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dolor eveniet ab quae ut blanditiis suscipit expedita culpa hic magni?
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/pr1.png" alt="#">
+                    <div class="layer">
+                        <h3>
+                            My-Portfolio Website
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit ex ea odit sint exercitationem assumenda ab sed laboriosam obcaecati?
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="image/pr3.png" alt="#">
+                    <div class="layer">
+                        <h3>
+                            Online Shopping Website
+                        </h3>
+                        <p>
+                            Amazone-cle
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="sub-title btnn">Contact Me</div>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i>vishal.prajapati21b@iiitg.ac.in</p>
+                    <p><i class="fa-solid fa-envelope"></i>kumarvishal2537@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>8887845035</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i>.</a>
+                        <a href="#https://www.twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#https://www.github.com"><i class="fa-brands fa-github"></i></a>
+                        <a href="#https://www.whatapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Meassage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 V. K. Co. Ltd.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
