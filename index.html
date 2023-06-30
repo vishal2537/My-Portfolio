@@ -139,7 +139,7 @@
                         algorithms, and solve problems effectively. My expertise in these languages allows me to create robust and efficient
                         solutions, contributing to successful projects and demonstrating versatility in programming.
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
                 </div>
                 <div>
                     <img src="image/data-structure.png" alt="">
@@ -149,7 +149,7 @@
                     efficiently implement algorithms, optimize code, and solve complex problems. My knowledge in this area enables me to
                     design efficient and scalable solutions for various programming tasks.</p>
                     
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
                 </div>
 
                 <div>
@@ -158,7 +158,7 @@
                     <p>I have a strong grasp of object-oriented programming (OOP) principles. With OOP, I can design modular, reusable, and
                     maintainable code. I leverage concepts like encapsulation, inheritance, and polymorphism to create robust software
                     solutions that are scalable, efficient, and adaptable to changing requirements.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
                 </div>
 
                 <div>
@@ -167,7 +167,7 @@
                     <p>I have acquired proficiency in MySQL, a widely-used database management system. With MySQL, I can efficiently design and
                     manage relational databases, perform data retrieval and manipulation operations, and optimize query performance. My
                     expertise in MySQL allows me to build robust and scalable database solutions for various applications.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
                 </div>
 
                 <div>
@@ -177,7 +177,7 @@
                     these skills, I can design and build responsive and interactive websites, implement front-end designs, handle back-end
                     functionalities, and create dynamic web applications. My proficiency in these technologies enables me to deliver
                     engaging and user-friendly web experiences.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
                 </div>
     
                 <div>
@@ -187,7 +187,7 @@
                     labeled data, implement algorithms such as linear regression, decision trees, and support vector machines, evaluate
                     model performance, and make accurate predictions. My knowledge of supervised machine learning enables me to develop
                     effective predictive models for various applications.</p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/vishal2537/College.git">Learn more</a>
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
                         with a comprehensive introduction to the college environment, fostering personal growth and preparing me for the
                         academic journey ahead
                     </p>
-                        <a href="#">Learn more</a>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%201">Learn more</a>
                 </div>
             </div>
             <div class="card">
@@ -221,7 +221,7 @@
                     Organization and Architecture, Basic Electronic Circuits, and Economics. Through these courses, I gained a strong
                     understanding of advanced mathematical concepts, data structures, computer organization, electronic circuits, and
                     economic principles, expanding my knowledge in these essential subjects.</p>
-                        <a href="#">Learn more</a>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%202">Learn more</a>
                 </div>
             </div>
             <div class="card">
@@ -231,7 +231,7 @@
                     Workshop I (OOPs), Physics I, and Economics. These courses deepened my understanding of advanced mathematical concepts,
                     algorithm design and analysis, object-oriented programming, physics principles, and economic theories, broadening my
                     knowledge across various disciplines.</p>
-                        <a href="#">Learn more</a>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%203">Learn more</a>
                 </div>
             </div>
             <div class="card">
@@ -241,7 +241,7 @@
                     Management System, Chemistry, and Macroeconomics. These courses equipped me with knowledge in areas such as OS
                     principles, AI techniques, database management, chemical principles, and macroeconomic theories, enhancing my
                     understanding of these subjects and their practical applications.</p>
-                        <a href="#">Learn more</a>
+                        <a href="https://github.com/vishal2537/College/tree/main/Labs/semester%204">Learn more</a>
                 </div>
             </div>
         </div>
@@ -313,12 +313,13 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name = "submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Meassage"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msge"></span>
                 </div>
             </div>
         </div>
@@ -349,5 +350,26 @@
             sidemenu.style.right = "-200px";
         }
     </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2roTrGx9VXzlK6vcGdNhb1sLQglFMa1UUyuM9iT7Nif6hzfbiAODTO6U_YCGjCnxi/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msge = document.getElementById("msge")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msge.innerHTML= "Message Sent Successfully, Thank You For Visting My Website."
+                    setTimeout(function()
+                    {
+                        msge.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 </body>
 </html>

@@ -418,6 +418,12 @@ nav .fas {
     display: none;
 }
 
+#msge{
+    color: #3498db;
+    margin-top: -40px;
+    display: block;
+}
+
 @media only screen and (max-width : 680px) {
     /* #header {
         background-image: url("large2.jpg");
