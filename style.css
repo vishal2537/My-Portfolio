@@ -94,10 +94,11 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+
 }
 
 .about-col-1 img {
-    width: 100%;margin-top: -100px;
+    width: 100%;margin-top: 100px;
 }
 
 .about-col-2 {
@@ -430,7 +431,7 @@ nav .fas {
     } */
 
     .header-text {
-        margin-top: 100%;font-size: 16px;
+        margin-top: 80%;font-size: 16px;
     }
 
     .header-text h1 {
@@ -527,6 +528,8 @@ nav .fas {
         border: none;
     }
 }
+
+
 
 @media only screen and (max-width : 900px ) and (min-width : 580px)
 {
