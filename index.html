@@ -6,6 +6,7 @@
     <title>My-Porfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fb3b7f1b54.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <div class="nav-bar">
@@ -36,8 +37,9 @@
         <div class="container">
             <div class="header-text">
                 <!-- <p>Software Developer</p> -->
-                <p>Learner</p>
-                <h1>Hi, I'm <span>Vishal</span> <br>Kumar Prajapati </h1>
+                <!-- <p>Learner</p> -->
+                <h1>Hi, I'm <span>Vishal</span> Kumar Prajapati </h1>
+                <p class="typed-container">I'm a &nbsp;<span id="typed-output" style="color: #3498db;"></span></p>
             </div>
         </div>
     </div>
@@ -348,6 +350,12 @@
         </div>
     </div>
     <script>
+         const typed = new Typed('#typed-output', {
+                strings: ['CSE Student.','Web Developer.', 'Software Engineer.', 'Freelancer.', 'Learner.'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
         function opentab(tabname) {

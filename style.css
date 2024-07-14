@@ -19,6 +19,33 @@
     box-sizing: border-box;
 }
 
+
+#typed-output {
+    font-weight: bold;
+    border-right: 2px solid #3498db;
+    font-size: 40px;
+    display: inline;
+    white-space: nowrap;
+    /* Ensure the text does not wrap to the next line */
+}
+
+.header-text {
+    text-align: center;
+}
+
+.typed-container {
+    display: flex;
+    /* justify-content: center; */
+    /* Center the container within its parent */
+    /* align-items: center; */
+    /* Center vertically */
+    height: 100%;
+    /* Adjust as necessary */
+    font-size: 40px;
+    margin-left: 22%;
+
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -70,11 +97,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 20%;font-size: 30px;color: black;
+    margin-top: 22%;font-size: 30px;color: black;
 }
 
 .header-text h1 {
-    font-size: 60px; margin-top: 20px;
+    font-size: 60px; 
+    margin-top: 20px;
 
 }
 
